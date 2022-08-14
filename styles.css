@@ -1,3 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --verydarkblue: hsl(212, 21%, 14%);
+  --darkgrayishblue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --montserrat: "Montserrat", sans-serif; /* 500, 700 */
+  --fraunces: "Fraunces", serif; /* 700 */
+}
+
+body {
+  font-size: 14px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
