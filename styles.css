@@ -23,6 +23,23 @@
 
 body {
   font-size: 14px;
+  font-family: var(--montserrat);
+  background: var(--cream);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: var(--fraunces);
+}
+
+p,
+.card--price_before {
+  color: var(--darkgrayishblue);
+}
+
+.container {
+  width: min(500px, 95%);
+  margin: 2rem auto;
 }
 
 .attribution {
