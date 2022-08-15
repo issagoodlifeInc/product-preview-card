@@ -22,6 +22,7 @@
 }
 
 body {
+  margin: 0;
   font-size: 14px;
   font-family: var(--montserrat);
   background: var(--cream);
@@ -40,6 +41,25 @@ p,
 .container {
   width: min(500px, 95%);
   margin: 2rem auto;
+}
+
+.main--img {
+  width: min(500px, 95%);
+  background-image: url("./images/image-product-mobile.jpg");
+  /* background: url("./images/image-product-mobile.jpg"); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card--body {
+  padding: 20px;
+  background: var(--white);
+}
+
+.card--type {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
 }
 
 .attribution {
