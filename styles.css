@@ -38,28 +38,68 @@ p,
   color: var(--darkgrayishblue);
 }
 
+.img--card {
+  display: block;
+  width: 100%;
+}
+
 .container {
-  width: min(500px, 95%);
-  margin: 2rem auto;
+  width: min(400px, 95%);
+  margin: 3rem auto;
 }
 
 .main--img {
-  width: min(500px, 95%);
+  /* width: min(500px, 95%);
   background-image: url("./images/image-product-mobile.jpg");
-  /* background: url("./images/image-product-mobile.jpg"); */
+  background: url("./images/image-product-mobile.jpg");
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+.mobile--img {
+  border-radius: 10px 10px 0 0;
+}
+
+.laptop--img {
+  display: none;
 }
 
 .card--body {
   padding: 20px;
   background: var(--white);
+  border-radius: 0 0 10px 10px;
+}
+
+.card--body_text {
+  line-height: 1.8;
 }
 
 .card--type {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: min(550px, 95%);
+    margin: 3rem auto;
+    margin-top: 15vh;
+  }
+  .laptop--img {
+    display: block;
+    height: 100%;
+  }
+  .mobile--img {
+    display: none;
+  }
+  .flex {
+    display: flex;
+  }
+  .card--body,
+  .main--img {
+    width: 50%;
+  }
 }
 
 .attribution {
