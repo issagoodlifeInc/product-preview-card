@@ -52,15 +52,16 @@ p,
   width: min(400px, 95%);
   margin: 3rem auto;
 }
-
+/*
 .main--img {
-  /* width: min(500px, 95%);
+  width: min(500px, 95%);
   background-image: url("./images/image-product-mobile.jpg");
   background: url("./images/image-product-mobile.jpg");
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
+*/
 
 .mobile--img {
   border-radius: 10px 10px 0 0;
@@ -88,6 +89,7 @@ p,
 
 .card--prices {
   position: relative;
+  padding-bottom: 1.2rem;
 }
 
 .card--price {
@@ -99,9 +101,32 @@ p,
   padding: 0 0.7rem;
   text-decoration: line-through;
   position: absolute;
-  top: 30%;
+  top: 20%;
 }
 
+.btn--card {
+  display: block;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.7rem;
+  color: var(--white);
+  background: var(--darkcyan);
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--card img {
+  padding: 0 0.5rem;
+}
+
+.btn--card:hover {
+  background: var(--verydarkblue);
+}
 @media (min-width: 700px) {
   .container {
     width: min(600px, 95%);
@@ -129,6 +154,10 @@ p,
     padding: 30px;
     border-radius: 0 10px 10px 0;
   }
+
+  .btn--card {
+    width: 100%;
+  }
 }
 
 .attribution {
@@ -137,8 +166,9 @@ p,
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: all 0.3s ease-in;
 }
 
 .attribution a:hover {
-  color: var(--darkcyan);
+  color: var(--verydarkblue);
 }
