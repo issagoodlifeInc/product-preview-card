@@ -177,5 +177,9 @@ p,
 }
 
 .attribution a:hover {
+  filter: blur(4px);
   color: var(--verydarkblue);
+  /* color: var(--verydarkblue); */
 }
+
+/* just want to ad something small */
